@@ -1,0 +1,78 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: daiyuanzhang@aliyun.com daiyuanzhang@aliyun.com, daiyuanzhang@aliyun.com, LIC=RC93N-YP872-SB7EJ-UQUEB-VIYFD-9Q5K3
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.26.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      Segger\JL2CM3.dll V2.99.31.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+E:\Users\daiyu\Desktop\STM32\毕业设计\USER\Hero2019.uvprojx
+Project File Date:  05/06/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Infatry_V2'
+compiling gimbal_task.c...
+..\FreeRTOS\portable\RVDS\ARM_CM4F\portmacro.h(64): warning:  #47-D: incompatible redefinition of macro "portMAX_DELAY"  (declared at line 182 of "..\App\gimbal_task.h")
+  	#define portMAX_DELAY ( TickType_t ) 0xffffffffUL
+..\BSP\SBUS.h(12): warning:  #1295-D: Deprecated declaration SBUS_Init - give arg types
+  void SBUS_Init();
+..\BSP\SBUS.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\App\gimbal_task.c(278): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if(CH_VAL.Distance > 0.20 && CH_VAL.Distance < 0.40)
+..\App\gimbal_task.c(278): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if(CH_VAL.Distance > 0.20 && CH_VAL.Distance < 0.40)
+..\App\gimbal_task.c(525): warning:  #1295-D: Deprecated declaration getFireMode - give arg types
+  extern 	uint8_t getFireMode();
+..\App\gimbal_task.c(42): warning:  #550-D: variable "hand_motor_mode"  was set but never used
+  static gimbal_motor_mode_e  hand_motor_mode; //定义抓手的结构体，用于获取云台的模式
+..\App\gimbal_task.c(66): warning:  #177-D: function "J_scope_gimbal_test"  was declared but never referenced
+  static void J_scope_gimbal_test(void);
+..\App\gimbal_task.c(528): warning:  #177-D: function "MOTOR_3508_Control_loop"  was declared but never referenced
+  static void MOTOR_3508_Control_loop(Gimbal_Control_t *gimbal_control_loop)
+..\App\gimbal_task.c(694): warning:  #177-D: function "GIMBAL_Set_Mode"  was declared but never referenced
+  static void GIMBAL_Set_Mode(Gimbal_Control_t *gimbal_set_mode)
+..\App\gimbal_task.c(647): warning:  #177-D: function "GIMBAL_Mode_Change_Control_Transit"  was declared but never referenced
+  static void GIMBAL_Mode_Change_Control_Transit(Gimbal_Control_t *gimbal_mode_change)
+..\App\gimbal_task.c(595): warning:  #177-D: function "GIMBAL_Set_Contorl"  was declared but never referenced
+  static void GIMBAL_Set_Contorl(Gimbal_Control_t *gimbal_set_control)
+..\App\gimbal_task.c(403): warning:  #177-D: function "voctor_speed_dir"  was declared but never referenced
+  static void voctor_speed_dir()
+..\App\gimbal_task.c: 13 warnings, 0 errors
+linking...
+Program Size: Code=87588 RO-data=3764 RW-data=1040 ZI-data=83576  
+FromELF: creating hex file...
+"..\OBJ\CAN.axf" - 0 Error(s), 13 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.14.0.pack
+                Keil.STM32F4xx_DFP.2.14.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Infatry_V2
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
